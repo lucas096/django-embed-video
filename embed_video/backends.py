@@ -307,7 +307,7 @@ class YoutubeBackend(VideoBackend):
 
     def get_code(self):
         code = super(YoutubeBackend, self).get_code()
-
+        
         if not code:
             parsed_url = urlparse.urlparse(self._url)
             parsed_qs = urlparse.parse_qs(parsed_url.query)
