@@ -2,10 +2,9 @@ import re
 import sys
 import json
 import requests
-
-if sys.version_info.major == 3:
+try:
     import urllib.parse as urlparse
-else:
+except:
     import urlparse
 
 from django.http import QueryDict
