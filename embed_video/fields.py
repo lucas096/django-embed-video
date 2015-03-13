@@ -39,7 +39,7 @@ class EmbedVideoFormField(forms.URLField):
         # if empty url is not allowed throws an exception
         super(EmbedVideoFormField, self).validate(url)
 
-       if not url:
+        if not url:
             return
 
         try:
