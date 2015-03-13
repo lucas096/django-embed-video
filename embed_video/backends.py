@@ -10,7 +10,7 @@ else:
 
 from django.http import QueryDict
 from django.template.loader import render_to_string
-from django.utils.functional import cached_property
+#from django.utils.functional import cached_property
 from django.utils.safestring import mark_safe
 
 from .utils import import_by_path
@@ -358,14 +358,14 @@ class SoundCloudBackend(VideoBackend):
     re_code = re.compile(r'src=".*%2F(?P<code>\d+)&show_artwork.*"', re.I)
     re_url = re.compile(r'src="(?P<url>.*?)"', re.I)
 
-    @cached_property
+   # @cached_property
     def width(self):
         """
         :rtype: str
         """
         return self.info.get('width')
 
-    @cached_property
+    #@cached_property
     def height(self):
         """
         :rtype: str
