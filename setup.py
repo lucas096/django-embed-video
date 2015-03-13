@@ -31,6 +31,6 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
     ],
     keywords=['youtube', 'vimeo', 'video', 'soundcloud'],
-    install_requires=['requests >= 1.2.3', 'Django >= 1.5'],
+    install_requires=['requests >= 1.2.3', 'Django < 1.4'],
     test_suite='nose.collector',
 )
